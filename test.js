@@ -38,10 +38,13 @@ describe('my app', function() {
 
 					requestParams.request.url.should.eql('http://localhost/api')
 					requestParams.initiator.type.should.eql('script')
+
+					var indexJs = 'file://' + path.join(__dirname, 'nwapp', 'index.js') 
+					var clickHandler = _.find(requestParams.initiator.stackTrace, { url: indexJs })
 					
-					var clickHandler = _.find(requestParams.initiator.stackTrace, { url: 'file://' + path.join(__dirname, 'nwapp', 'index.js') })
-					
+					should(clickHandler).be.defined
 					clickHandler.lineNumber.should.eql(24)
+					
 					done()
 				}, 1000)
 			})
