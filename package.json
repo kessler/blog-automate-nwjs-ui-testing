@@ -1,14 +1,14 @@
 {
   "name": "nw-ninja",
   "version": "0.0.8",
-  "description": "minimal node-webkit starter project for ninjas",
+  "description": "code for a blog post",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/kessler/nw-ninja"
+    "url": "https://github.com/kessler/blog-automate-nwjs-ui-testing-"
   },
   "keywords": [
     "node-webkit"
@@ -16,9 +16,9 @@
   "author": "Yaniv Kessler",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kessler/nw-ninja/issues"
+    "url": "https://github.com/kessler/blog-automate-nwjs-ui-testing-/issues"
   },
-  "homepage": "https://github.com/kessler/nw-ninja",
+  "homepage": "https://github.com/kessler/blog-automate-nwjs-ui-testing-",
   "dependencies": {
     "async": "^0.9.0",
     "chrome-remote-interface": "^0.6.1",
