@@ -21,13 +21,14 @@
   "homepage": "https://github.com/kessler/nw-ninja",
   "dependencies": {
     "async": "^0.9.0",
+    "chrome-remote-interface": "^0.6.1",
+    "gulp": "^3.8.7",
+    "gulp-util": "^3.0.0",
     "lodash": "^3.4.0",
+    "minimist": "^1.1.1",
     "node-webkit-builder": "^1.0.11",
     "rc": "^0.5.0",
     "rimraf": "^2.2.8",
-    "should": "^5.2.0",
-    "chrome-remote-interface": "^0.6.1",
-    "gulp": "^3.8.7",
-    "gulp-util": "^3.0.0"    
+    "should": "^5.2.0"
   }
 }

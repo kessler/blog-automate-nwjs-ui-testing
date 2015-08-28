@@ -5,6 +5,11 @@ var async = require('async')
 var findPositionInWindow = require('./findPositionInWindow.js')
 var _ = require('lodash')
 var should = require('should')
+var argv = require('minimist')(process.argv.slice(2))
+
+if (!argv['remote-debugging-port']) {
+	throw new Error('missing remote-debugging-port, try mocha test.js --remote-debugging-port=xxx')
+}
 
 describe('my app', function() {
 	this.timeout(20000)
